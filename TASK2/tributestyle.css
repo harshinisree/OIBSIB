@@ -1,0 +1,173 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header {
+  padding: 5px;
+  text-align: center;
+  color: #fcfcfc;
+  width: 100%;
+  position: relative;
+  height: 150px; /* Adjust the height to your desired size */
+}
+
+.header:before {
+  content: "";
+  
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.header h1 {
+  font-size: 40px; /* Adjust the font size to your desired size */
+  position: relative;
+  z-index: 2;
+  color: #333333; 
+}
+
+.header .highlight-box {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  margin: 10px auto;
+  width: 200%; 
+  max-width: fit-content;
+  display: inline-block;
+  z-index: 3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgba(0,0,0,.5);
+  color: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 80%;
+  padding: 20px;
+}
+
+.image-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.leonardo-image {
+  max-width:40%;
+  height: auto;
+}
+
+.content {
+  max-width: 100%;
+  margin: 5px auto;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  border: 1px solid #F5DEB3;
+}
+
+.content h2 {
+  margin-top: 0;
+}
+
+.content p {
+  line-height: 1.6;
+}
+
+.artwork-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  margin-top: 40px;
+}
+
+.artwork-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.artwork-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.artwork-details h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.artwork-details p {
+  margin-top: 5px;
+}
+
+.quote {
+  font-style: italic;
+  color: #fff;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  position: relative;
+  padding: 20px;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 100%;
+  width: 2px;
+  background: orangered;
+  margin-left: -1px;
+}
+
+.info {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.title {
+  color: orangered;
+  position: relative;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 999px;
+  left: -20px;
+  top: calc(50% - 5px);
+  border: 2px dotted orangered;
+}
